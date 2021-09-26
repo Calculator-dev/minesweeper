@@ -52,7 +52,7 @@ export default function Board() {
 
 
     const revealCell = (x, y) => {
-        if (grid[x][y].revealed || gameOver) {
+        if (grid[x][y].revealed || gameOver || gameLost) {
             return;
         }
         let newGrid = JSON.parse(JSON.stringify(grid));
@@ -72,6 +72,7 @@ export default function Board() {
                 setGameOver(true)
             }
         }
+
     }
 
 

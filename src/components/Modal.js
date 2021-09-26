@@ -2,15 +2,20 @@ import { Button, Typography } from "@mui/material";
 import React from "react";
 
 export default function Modal({ reset }) {
+
+
     return (
         <div
             style={{
-                height: "200px",
-                width: "200px",
+                height: "100%",
+                width: "100%",
                 position: "absolute",
-                background: "#F0A500",
+                background: "#FF5C58",
                 borderRadius: "5px",
-                textAlign: "center",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center"
             }}
         >
             <div>
