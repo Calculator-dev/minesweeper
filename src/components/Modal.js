@@ -7,15 +7,10 @@ export default function Modal({ reset }) {
     return (
         <div
             style={{
-                height: "100%",
-                width: "100%",
-                position: "absolute",
-                background: "#FF5C58",
-                borderRadius: "5px",
+                width: "20%",
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center"
+                margin: "auto"
             }}
         >
             <div>

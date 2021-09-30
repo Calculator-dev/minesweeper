@@ -6,11 +6,12 @@ export const revealed = (arr, x, y, newNonMinesCount) => {
     flipped.push(arr[x][y]);
     while (flipped.length !== 0) {
         let single = flipped.pop();
-
         if (!single.revealed) {
             newNonMinesCount--;
             single.revealed = true;
         }
+
+
 
         if (single.value !== 0) {
             break;
@@ -135,5 +136,7 @@ export const revealed = (arr, x, y, newNonMinesCount) => {
             newNonMinesCount--;
         }
     }
+    console.log(arr);
+
     return { arr, newNonMinesCount };
 };
